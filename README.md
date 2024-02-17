@@ -25,13 +25,13 @@ This will allow users to add books to a collection.
 ## REST APIs
 •	bms list books => GET /books
 
- o	bms list books --collection_id <id> => GET /books?collection_id=<id>
+   o	bms list books --collection_id <id> => GET /books?collection_id=<id>
    
- o	bms list books --genre <genre> => GET /books?genre=<genre>
+   o	bms list books --genre <genre> => GET /books?genre=<genre>
 
- o	bms list books --author <author> => GET /books?author=<author>
+   o	bms list books --author <author> => GET /books?author=<author>
 
- o	bms list books --collection_id <id> --genre <genre> --author <author> => GET /books?collection_id=<id>&genre=<genre>&author=<author>
+   o	bms list books --collection_id <id> --genre <genre> --author <author> => GET /books?collection_id=<id>&genre=<genre>&author=<author>
  
 •	bms list collections => GET /collections
  
