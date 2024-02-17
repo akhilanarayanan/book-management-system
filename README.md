@@ -51,18 +51,18 @@ The ID column of each table will be the primary key.
 
 Collections Table:	
 
-ID | Name
+```ID | Name
 
 1  | Collection 1
 
 2	| Collection 2
 
-3	| Collection 3
+3	| Collection 3```
 
 
 Books Table: Collection Id is a foreign key referencing Id of Collections Table
 
-Id | Title                     | Genre           | Author             | Collection Id
+```Id | Title                     | Genre           | Author             | Collection Id
 
 1	 | The Hobbit	               | Fantasy	        | J. R. R. Tolkien	  | 1
 
@@ -70,7 +70,4 @@ Id | Title                     | Genre           | Author             | Collecti
 
 3	 | Strangers on a Train	     | Thriller	       | Patricia Highsmith	| 2
 
-4	 | The Left Hand of Darkness | Science Fiction | Ursula K. Le Guin	 | 3
-
-
-
+4	 | The Left Hand of Darkness | Science Fiction | Ursula K. Le Guin	 | 3```
