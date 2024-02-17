@@ -21,30 +21,30 @@ This will also take 3 optional filters: ```--collection_id```, ```--genre```, an
 
 This will list all the collections and their ids
 
-•	```add_collection --name <name>```
+•	```add_collection --name `<name>````
 
 This will allow users to create a new collection.
 
-•	```add_book --collection_id <id> --title <title> --author <author> --genre <genre>```
+•	```add_book --collection_id `<id>` --title `<title>` --author `<author>` --genre `<genre>````
 
 This will allow users to add books to a collection.
 
 ## REST APIs
 •	bms list books => GET /books
 
-   o	bms list books --collection_id <id> => GET /books?collection_id=<id>
+   o	bms list books --collection_id `<id>` => GET /books?collection_id=`<id>`
    
-   o	bms list books --genre <genre> => GET /books?genre=<genre>
+   o	bms list books --genre `<genre>` => GET /books?genre=`<genre>`
 
-   o	bms list books --author <author> => GET /books?author=<author>
+   o	bms list books --author `<author>` => GET /books?author=`<author>`
 
-   o	bms list books --collection_id <id> --genre <genre> --author <author> => GET /books?collection_id=<id>&genre=<genre>&author=<author>
+   o	bms list books --collection_id `<id>` --genre `<genre>` --author `<author>` => GET /books?collection_id=`<id>`&genre=`<genre>`&author=`<author>`
  
 •	bms list collections => GET /collections
  
-•	bms add collection -name <name> => POST /add_collection?name=<name>
+•	bms add collection --name `<name>` => POST /add_collection?name=`<name>`
  
-•	bms add book -collection_id <id> -title <title> -author <author> -genre <genre> => POST /add_book?collection_id=<id>&title=<title>&genre=<genre>&author=<author>
+•	bms add book --collection_id `<id>` --title `<title>` --author `<author>` --genre `<genre>` => POST /add_book?collection_id=`<id>`&title=`<title>`&genre=`<genre>`&author=`<author>`
 
 ## Database Structure 
 The ID column of each table will be the primary key. 
