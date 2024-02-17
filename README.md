@@ -2,15 +2,24 @@
 This is a simple book management system that provides a REST API, stores its data in a relational database, and has a CLI client that can interact with it.
 
 ## CLI commands
-My CLI commands will expose REST APIs for managing the books. Users can issue direct http calls via curl, or they can use my CLI commands. I will just list the CLI commands and explain what they allow users to do.
+My CLI commands will expose REST APIs for managing the books. Users can issue direct http calls via curl, or they can use my CLI commands. I will list the CLI commands and explain what they allow users to do.
+
 •	```list_books``` 
+
 This will just list all the books put into the server from various collections and include title, author, and genre. 
+
 This will also take 3 optional filters: ```--collection_id```, ```--genre```, and ```--author```. For example: ```list_books --collection_id 1 --genre fantasy``` will list all the fantasy books in collection 1. If a user forgets their collection id, but remembers their collection name, they can call ```list_collections``` and find their collection id.
+
 •	```list_collections```
+
 This will list all the collections and their ids
+
 •	```add_collection --name <name>```
+
 This will allow users to create a new collection.
+
 •	```add_book --collection_id <id> --title <title> --author <author> --genre <genre>```
+
 This will allow users to add books to a collection.
 
 ## REST APIs
