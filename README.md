@@ -24,37 +24,46 @@ This will allow users to add books to a collection.
 
 ## REST APIs
 •	bms list books => GET /books
-o	bms list books --collection_id <id> => GET /books?collection_id=<id>
-o	bms list books --genre <genre> => GET /books?genre=<genre>
-o	bms list books --author <author> => GET /books?author=<author>
-o	bms list books --collection_id <id> --genre <genre> --author <author> => GET /books?collection_id=<id>&genre=<genre>&author=<author>
-example input and output: GET /books
- 
-example input and output: GET /books?collection_id=1&author=Gillian Flynn
+
+ o	bms list books --collection_id <id> => GET /books?collection_id=<id>
+   
+ o	bms list books --genre <genre> => GET /books?genre=<genre>
+
+ o	bms list books --author <author> => GET /books?author=<author>
+
+ o	bms list books --collection_id <id> --genre <genre> --author <author> => GET /books?collection_id=<id>&genre=<genre>&author=<author>
  
 •	bms list collections => GET /collections
-example input and output: GET /collections
  
 •	bms add collection -name <name> => POST /add_collection?name=<name>
-example input and output: POST /add_collection?name=Collection_3
  
 •	bms add book -collection_id <id> -title <title> -author <author> -genre <genre> => POST /add_book?collection_id=<id>&title=<title>&genre=<genre>&author=<author>
-example input and output: POST /addbook?collection_id=3&title=The Left Hand of Darkness&genre=Science Fiction&author=Ursula K. Le Guin
 
 ## Database Structure 
 The ID column of each table will be the primary key. 
+
 Collections Table:	
+
 ID | Name
+
 1  | Collection 1
+
 2	 | Collection 2
+
 3	 | Collection 3
 
+
 Books Table: Collection Id is a foreign key referencing Id of Collections Table
+
 Id | Title                     | Genre           | Author             | Collection Id
-1	 | The Hobbit	               | Fantasy	       | J. R. R. Tolkien	  | 1
-2	 | Gone Girl	        	     | Thriller        | Gillian Flynn	    | 1
+
+1	 | The Hobbit	               | Fantasy	        | J. R. R. Tolkien	  | 1
+
+2	 | Gone Girl	        	       | Thriller        | Gillian Flynn	     | 1
+
 3	 | Strangers on a Train	     | Thriller	       | Patricia Highsmith	| 2
-4	 | The Left Hand of Darkness | Science Fiction | Ursula K. Le Guin	| 3
+
+4	 | The Left Hand of Darkness | Science Fiction | Ursula K. Le Guin	 | 3
 
 
 
