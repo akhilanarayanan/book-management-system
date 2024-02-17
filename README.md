@@ -21,7 +21,7 @@ This will also take 3 optional filters: ```--collection_id```, ```--genre```, an
 
 This will list all the collections and their ids
 
-•	```add_collection --name \<name>```
+•	```add_collection --name <name>```
 
 This will allow users to create a new collection.
 
