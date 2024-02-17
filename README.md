@@ -1,6 +1,13 @@
 # book-management-system
 This is a simple book management system that provides a REST API, stores its data in a relational database, and has a CLI client that can interact with it.
 
+## How to run
+In one terminal, run ```python app.py```
+
+In a separate terminal, run ```python client.py```
+
+The client will prompt you to enter a command. Type one of the valid CLI commands and hit enter.
+
 ## CLI commands
 My CLI commands will expose REST APIs for managing the books. Users can issue direct http calls via curl, or they can use my CLI commands. I will list the CLI commands and explain what they allow users to do.
 
