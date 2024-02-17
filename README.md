@@ -30,21 +30,21 @@ This will allow users to create a new collection.
 This will allow users to add books to a collection.
 
 ## REST APIs
-•	```list books => GET /books```
+•	```list_books => GET /books```
 
-   o	```list books --collection_id <id> => GET /books?collection_id=<id>```
+   o	```list_books --collection_id <id> => GET /books?collection_id=<id>```
    
-   o	```list books --genre <genre> => GET /books?genre=<genre>```
+   o	```list_books --genre <genre> => GET /books?genre=<genre>```
 
-   o	```list books --author <author> => GET /books?author=<author>```
+   o	```list_books --author <author> => GET /books?author=<author>```
 
-   o	```list books --collection_id <id> --genre <genre> --author <author> => GET /books?collection_id=<id>&genre=<genre>&author=<author>```
+   o	```list_books --collection_id <id> --genre <genre> --author <author> => GET /books?collection_id=<id>&genre=<genre>&author=<author>```
  
-•	```list collections => GET /collections```
+•	```list_collections => GET /collections```
  
-•	```add collection --name <name> => POST /add_collection?name=<name>```
+•	```add_collection --name <name> => POST /add_collection?name=<name>```
  
-•	```add book --collection_id <id> --title <title> --author <author> --genre <genre> => POST /add_book?collection_id=<id>&title=<title>&genre=<genre>&author=<author>```
+•	```add_book --collection_id <id> --title <title> --author <author> --genre <genre> => POST /add_book?collection_id=<id>&title=<title>&genre=<genre>&author=<author>```
 
 ## Database Structure 
 The ID column of each table will be the primary key. 
